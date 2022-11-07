@@ -1,0 +1,26 @@
+@font-face {
+   font-family: 'Forum Regular';
+   src: url('Forum.eot');
+   src: url('Forum.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/Forum.woff') format('woff'),
+      url('/fonts/Forum.woff2') format('woff2'),
+      url('/fonts/Forum.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+
+:root {
+   --textColor: white;
+   --backgroundColor: #3B181E;
+
+}
+
+
+body {
+   font-family: 'Forum';
+   font-style: normal;
+   font-weight: 400;
+   background: var(--backgroundColor);
+   color: var(--textColor)
+}
