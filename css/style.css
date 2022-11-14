@@ -16,11 +16,851 @@
 
 }
 
+.wrapper {
+   max-width: 1920px;
+   margin: 0 auto;
+   border: solid 1px #11f258;
+   font-family: 'Forum Regular';
+   font-weight: normal;
+   font-style: normal;
+   background: var(--backgroundColor);
+   color: var(--textColor);
+}
 
 body {
-   font-family: 'Forum';
-   font-style: normal;
-   font-weight: 400;
    background: var(--backgroundColor);
+}
+
+ul {
+   list-style-type: none;
+   padding-left: 0;
+   /* что бы не было лишнего отступа слева */
+}
+
+a {
+   text-decoration: none;
+}
+
+img {
+   width: 100%;
+   height: 100%;
+}
+
+
+/* < !-- ШАПКА НАЧАЛО --> */
+
+.navigation__logo {
+   width: 137px;
+   height: 42px;
+}
+
+
+.navigation {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   padding: 112px 96px 0 96px;
+}
+
+
+.menu {
+   display: flex;
+   gap: 60px;
+}
+
+.menu__list-link {
+   color: var(--textColor);
+}
+
+
+.contact-number {
+   color: var(--textColor);
+}
+
+.syte-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 189px;
+   gap: 80px;
+   /* width: fit-content;
+   margin: 189px auto; */
+}
+
+
+
+.syte-container__title-text {
+   font-size: 120px;
+   line-height: 132px;
+   text-align: center;
+   letter-spacing: 0.09em;
+   text-transform: uppercase;
    color: var(--textColor)
+}
+
+
+
+.header__btn {
+   width: 199px;
+   height: 50px;
+   background: rgba(0, 0, 0, 0.4);
+}
+
+
+/* общие стили кнопки  */
+.link-style {
+   text-align: center;
+   font-size: 12px;
+   line-height: 13px;
+   letter-spacing: 0.15em;
+   text-transform: uppercase;
+   color: var(--textColor);
+}
+
+.link-block {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #FFFFFF;
+}
+
+/* общие стили кнопки  КОНЕЦ */
+
+
+
+.social-container {
+   border: solid 1px rgb(204, 26, 220);
+   display: flex;
+   justify-content: space-between;
+   /* padding: 0 96px; */
+   /* align-items: flex-end; */
+   /* position: relative; */
+   /* align-items: center; */
+   padding-bottom: 25px;
+}
+
+.social-container__media {
+   border: solid 1px #999;
+   display: flex;
+   flex-direction: column;
+   gap: 23px;
+}
+
+.social-container__media-img {
+   border: solid 1px #999;
+   width: 25px;
+   height: 25px;
+}
+
+.social-container__mause {
+   border: solid 1px #999;
+   display: flex;
+   align-items: flex-end;
+}
+
+.social-container__mause-img {
+   border: solid 1px #999;
+   width: 37px;
+   height: 56px;
+}
+
+.social-container__catalog {
+   border: solid 1px rgb(64, 60, 180);
+   position: relative;
+   transform: rotate(90deg);
+   display: flex;
+   align-items: flex-start;
+   height: 20px;
+   gap: 15px;
+   margin-right: -88px;
+   /* width: 22px;
+	height: 211px; */
+
+}
+
+.social-container__catalog-text {
+   /* border: solid 1px rgb(196, 75, 75); */
+   font-size: 20px;
+   line-height: 18px;
+   letter-spacing: 0.06em;
+   color: var(--textColor);
+   /* text-align: center; */
+   display: inline-flex;
+}
+
+.social-container__catalog-arrow {
+   width: 14px;
+   height: 14px;
+   transform: rotate(-90deg);
+   margin-top: 6px;
+   /* margin: auto; */
+
+}
+
+.container-header {
+   background-image: url(../images/background-img.jpg);
+   /* height: 100vh; */
+   margin: 0 auto;
+   background-repeat: no-repeat;
+
+}
+
+.liniar-gradient {
+   height: 75px;
+   background: linear-gradient(0deg, #3B181E 3.33%, rgba(59, 24, 30, 0) 100%);
+   margin-bottom: 186px;
+}
+
+/* < !-- ШАПКА КОНЕЦ --> */
+/* ----------- */
+/* < !-- КАТАЛОГ УСЛУГ НАЧАЛО -->   */
+
+.container-title {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.wrapper-title {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 22px;
+   /* margin-top: 172px; */
+
+}
+
+.wrapper-title__text {
+   font-size: 30px;
+   line-height: 33px;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+   color: var(--textColor);
+
+}
+
+.wrapper-title__line {
+   width: 85.5px;
+   height: 2px;
+   margin-bottom: 94px;
+
+   /* нужно убрать отступы .. есть схлопавание */
+}
+
+
+
+.background-text {
+   position: absolute;
+   z-index: 0;
+   top: 0px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 100%;
+}
+
+.background-text__p {
+   font-size: 220px;
+   line-height: 243px;
+   text-align: center;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+   color: var(--textColor);
+   opacity: 0.03;
+
+}
+
+/* -------------------------------------------------------------- */
+.section-catalog {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   /* flex-direction: row; */
+   justify-content: center;
+   /* max-height: 840px; */
+   z-index: 0;
+   margin-bottom: 256px;
+   border: solid 1px;
+}
+
+.big-container-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+.container-card {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   margin-right: 40px;
+}
+
+
+
+
+
+
+.border-card {
+   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.catalog-card--width {
+   width: 350px;
+}
+
+
+.catalog-card--height1 {
+   height: 365px;
+}
+
+.catalog-card--height2 {
+   height: 754px;
+}
+
+.catalog-card--height5 {
+   height: 387px;
+}
+
+
+.catalog-card--height3,
+.catalog-card--height7 {
+   height: 512px;
+}
+
+.catalog-card--height4,
+.catalog-card--height6 {
+   height: 288px;
+}
+
+
+.wrapper-card {
+   position: relative;
+   width: fit-content;
+   display: flex;
+   flex-direction: column;
+   padding: 10px 10px 0 10px;
+
+}
+
+.wrapper-card__number {
+   position: absolute;
+   display: flex;
+   align-items: baseline;
+   top: 50px;
+   left: 30px;
+   gap: 12px;
+   z-index: 2;
+}
+
+.wrapper-card__number-text {
+   font-size: 20px;
+   line-height: 22px;
+   text-transform: uppercase;
+   color: var(--textColor);
+}
+
+.wrapper-card__number-line {
+   width: 70px;
+   height: 2px;
+}
+
+.wrapper-card__img {
+   position: relative;
+   margin-bottom: 20px;
+   z-index: 0;
+}
+
+
+.card-img--width {
+   width: 330px;
+}
+
+
+.card-img--height1 {
+   height: 223px;
+}
+
+.card-img--height2 {
+   height: 610px;
+}
+
+.card-img--height5 {
+   height: 245px;
+}
+
+
+.card-img--height4,
+.card-img--height6 {
+   height: 146px;
+}
+
+.card-img--height3,
+.card-img--height7 {
+   height: 370px;
+}
+
+
+
+.img1 {
+   background: url(../images/catalog-img1.jpg);
+}
+
+.img2 {
+   background: url(../images/catalog-img2.jpg);
+}
+
+.img3 {
+   background: url(../images/catalog-img3.jpg);
+}
+
+.img4 {
+   background: url(../images/catalog-img4.jpg);
+}
+
+.img5 {
+   background: url(../images/catalog-img5.jpg);
+}
+
+.img6 {
+   background: url(../images/catalog-img6.jpg);
+}
+
+.img7 {
+   background: url(../images/catalog-img7.jpg);
+}
+
+
+.wrapper-card__opacity {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   box-shadow: inset 0px 4px 100px rgba(21, 19, 19, 0.5);
+   z-index: 1;
+}
+
+/* Весьма не целисообразная цветокорекция дизайнером фильра для фото .. задал универсальный  */
+
+
+.wrapper-card__text {
+   font-size: 16px;
+   line-height: 170%;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   color: var(--textColor);
+   opacity: 0.9;
+   margin-bottom: 54px;
+   width: fit-content;
+}
+
+
+.px29 {
+   margin-bottom: 29px;
+}
+
+.wrapper-card-link {
+   font-size: 12px;
+   line-height: 13px;
+   text-align: center;
+   letter-spacing: 0.15em;
+   text-transform: uppercase;
+   color: var(--textColor);
+}
+
+/* < !-- КАТАЛОГ УСЛУГ КОНЕЦ -->   */
+/* ---------------------------------------------------------------- */
+/* < !-- Акционные предложения --> */
+.action {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 94px;
+   margin-top: 256px;
+   margin-bottom: 270px;
+
+}
+
+.action__block-text {
+   margin: auto 0;
+   /* на глаз в макете  не понять */
+   width: 397px;
+   height: 309px;
+}
+
+.action__title {
+   font-size: 50px;
+   line-height: 55px;
+   letter-spacing: 0.09em;
+   text-transform: uppercase;
+   color: var(--textColor);
+   margin-bottom: 31px;
+}
+
+.action__line86 {
+   width: 70px;
+   height: 2px;
+   margin-bottom: 25px;
+   /* где блять 2 px? */
+}
+
+.action__text {
+   font-size: 18px;
+   line-height: 170%;
+   color: var(--textColor);
+   margin-bottom: 31px;
+}
+
+.action__btn {
+   width: 220px;
+   height: 50px;
+}
+
+.action__block-img {
+   position: relative;
+   z-index: 0;
+   width: 697px;
+   height: 410px;
+
+}
+
+.action__border-img {
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   width: 697px;
+   height: 410px;
+   position: absolute;
+   z-index: 1;
+   top: 22px;
+   left: 27px;
+}
+
+/* < !-- Акционные предложения КОНЕЦ--> */
+/* ---------------------------------------------------------------- */
+/* < !-- Композиции и шляпные коробки -->  */
+.composition {
+   display: flex;
+   flex-direction: row;
+   gap: 114px;
+}
+
+.copmosition__block-img {
+   position: relative;
+   z-index: 0;
+   width: 1000px;
+   height: 855px;
+   margin-left: 95px;
+   margin-bottom: 246px;
+   /* aspect-ratio: 2 / 1; */
+   /* спросить про эту тему? */
+}
+
+.copmosition__border-img {
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   width: 966px;
+   height: 801px;
+   position: absolute;
+   z-index: 1;
+   top: 30px;
+   left: 30px;
+}
+
+.composition__block-text {
+   margin: auto 0;
+   width: 40%;
+   /* при этом картинка сжимается .. спросить как бы ть?  */
+}
+
+.composition__title {
+   font-size: 50px;
+   line-height: 55px;
+   letter-spacing: 0.09em;
+   text-transform: uppercase;
+}
+
+.composition__line86 {
+   width: 85.5px;
+   height: 2px;
+   margin-top: 31px;
+   padding-bottom: 25px;
+   /* если марджин то происходит схлопование ... спросить как быть  */
+}
+
+.composition__text {
+   font-size: 18px;
+   line-height: 150%;
+   padding-right: 101px;
+   margin-bottom: 30px;
+}
+
+.composition__btn {
+   width: 135px;
+   height: 50px;
+   margin-bottom: 100px;
+}
+
+
+.composition__row-img {
+   display: flex;
+   flex-flow: row nowrap;
+   gap: 20px;
+}
+
+.composition__img1 {
+   width: 123px;
+   height: 123px;
+}
+
+.composition__img2 {
+   width: 123px;
+   height: 123px;
+}
+
+.composition__img3 {
+   width: 123px;
+   height: 123px;
+}
+
+.composition__img4 {
+   width: 123px;
+   height: 123px;
+}
+
+/* < !-- Композиции и шляпные коробки КОНЕЦ --> */
+/* -------------------- */
+/* < !-- Подарочные карты --> */
+
+.section-gift {
+   margin-bottom: 272px;
+   /* Есть где то схлопование на 100 */
+}
+
+.gift {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 30px;
+}
+
+.gift__wrapper {
+   display: flex;
+   flex-direction: column;
+   background: #281014;
+   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.4);
+   border-radius: 8px 8px 0px 0px;
+}
+
+.gift__hw-card1 {
+   margin-top: 60px;
+   width: 348px;
+   height: 574px;
+}
+
+.gift__hw-card2 {
+   width: 420px;
+   height: 694px;
+}
+
+.gift__header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+
+   border-radius: 8px;
+   width: 348px;
+   height: 219px;
+   margin-bottom: 70px;
+}
+
+.gift__header2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+
+   border-radius: 10px;
+   width: 420px;
+   height: 264px;
+   margin-bottom: 99px;
+}
+
+.color-card1 {
+   background: #262835;
+}
+
+.color-card2 {
+   background: #0A0A0E;
+
+}
+
+.color-card3 {
+   background: #101116;
+}
+
+
+
+.gift__decor-img1 {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   width: 101px;
+   height: 101px;
+   transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.gift__decor-img2 {
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+
+   width: 101px;
+   height: 101px;
+   transform: rotate(0.5turn);
+}
+
+.gift__numbers {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+
+   font-size: 20px;
+   line-height: 22px;
+   letter-spacing: 0.06em;
+}
+
+.gift__price {
+   position: absolute;
+   bottom: 10px;
+   left: 10px;
+
+   font-size: 20px;
+   line-height: 22px;
+   letter-spacing: 0.06em;
+}
+
+.gift__logo {
+   z-index: 0;
+   width: 198.38px;
+   height: 61.31px;
+}
+
+.gift__block-text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 27px;
+}
+
+.gift__text {
+   font-size: 18px;
+   line-height: 150%;
+   text-align: center;
+   padding: 0 27px;
+   margin-bottom: 25px;
+}
+
+.gift__decor-img3 {
+   width: 306px;
+   height: 60px;
+}
+
+.gift__decor-img4 {
+   width: 380px;
+   height: 75px;
+}
+
+.gift__btn {
+   width: 134px;
+   height: 50px;
+}
+
+.gift__button {
+   margin: 0 auto;
+}
+
+
+
+/* < !-- Подарочные карты КОНЕЦ--> */
+/* ---------------------------------------------------------------- */
+/* < !-- Наши поставщики --> */
+.section-purveyor {
+   margin-bottom: 196px;
+}
+
+.purveyor {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 34px;
+}
+
+.purveyor__block1 {
+   display: flex;
+   gap: 34px;
+}
+
+.purveyor__img1,
+.purveyor__img2,
+.purveyor__img3 {
+   width: 370px;
+   height: 122px;
+}
+
+
+.purveyor__block2 {
+   display: flex;
+   gap: 34px;
+}
+
+.purveyor__img4,
+.purveyor__img5 {
+   width: 571px;
+   height: 190px;
+}
+
+.purveyor__block3 {
+   display: flex;
+   gap: 34px;
+}
+
+.purveyor__img6,
+.purveyor__img7,
+.purveyor__img8,
+.purveyor__img9 {
+   width: 268px;
+   height: 90px;
+}
+
+
+
+/* < !-- Наши поставщики КОНЕЦ --> */
+.main-line {
+   border-bottom: 1px solid rgb(255, 255, 255);
+   margin-bottom: 21px;
+}
+
+.footer {
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+   margin-bottom: 30px;
+}
+
+.footer__link a {
+   font-size: 16px;
+   line-height: 18px;
+   color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-media {
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+   margin-bottom: 50px;
+}
+
+.footer-media__img {
+   width: 25px;
+   height: 25px;
 }
